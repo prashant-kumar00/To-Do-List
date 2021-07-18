@@ -78,13 +78,10 @@ app.get("/:name",function(req,res) {
   console.log(req.params.name);
 });
 
-let port=process.env.PORT;
-if(port==NULL || port=="")
-{
-  port=3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
 }
-
-
 
 app.listen(port, function() {
   console.log("Server started successfully");
